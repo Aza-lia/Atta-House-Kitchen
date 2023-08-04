@@ -1,0 +1,202 @@
+body {
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(150, 121, 105,1),
+            rgba(150, 121, 105,0.5)
+        );
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Grande';
+    color: white;
+    overflow: hidden;
+}
+
+/* This is Header Style */
+header {
+    background-image: url(../assets/Atta\ House\ Arabic\ Food.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+header {
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header > section {
+    text-align: center;
+    padding-bottom: 10vh;
+}
+
+.form {
+    height: min-content;
+    margin: 0px;
+    padding: 0px;
+}
+
+#form {
+    vertical-align: bottom;
+}
+
+.form-name, .form-submit {
+    height: initial;
+    /* margin-top: auto; */
+    border: 1px solid lightgrey;
+    border-radius: 5%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.form-name::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+
+/* This is Animated-Chevron */
+.container {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    /* border: 1px solid black; */
+}
+  
+.chevrondown {
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+    justify-self: center;
+    text-align: center;
+}
+
+.chevronup {
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+    justify-self: center;
+    text-align: center;
+}
+  
+.chevrondown:first-child {
+    animation: move 3s ease-out 1s infinite;
+}
+  
+.chevrondown:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+}
+  
+.chevrondown:before, .chevrondown:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #fff;
+}
+  
+.chevrondown:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+}
+  
+.chevrondown:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+}  
+.chevronup:first-child {
+    animation: move 3s ease-out 1s infinite;
+}
+  
+.chevronup:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+}
+  
+.chevronup:before, .chevronup:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #fff;
+}
+  
+.chevronup:before {
+    left: 0;
+    transform: skew(0deg, -30deg);
+}
+  
+.chevronup:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, 30deg);
+}
+ 
+@keyframes move {
+    25% {
+      opacity: 1;
+  
+    }
+    33% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    67% {
+      opacity: 1;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+}
+
+
+/* This is Main Style */
+main {
+    height: 100vh;
+}
+
+
+/* This is Footer Style */
+footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contact-us {
+    height: max-content;
+    /* border: 1px solid black; */
+}
+
+.contact-us > a > img {
+    width: 10%;
+}
+
+.bottom-footer {
+    height: 10vh;
+    margin-top: 20vh;
+}
+
+.bottom-footer > p {
+    vertical-align: middle;
+}

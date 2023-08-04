@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atta House Kitchen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rubik+Puddles&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <section class="form">
+            <form name="name-form" id="form" onsubmit="return validateName()">
+                <input name="casual-name" class="form-name" type="text" placeholder="Casual Name">
+                <input class="form-submit" type="submit" value="Send">
+            </form>
+        </section>
+        <section class="container">
+            <br>
+            <a href="#shop">
+                <div class="chevrondown"></div>
+                <div class="chevrondown"></div>
+                <div class="chevrondown"></div>
+            </a>
+        </section>
+    </header>
+    <main id="shop">
+        <h1 style="text-align: center; font-family: 'Fredericka The Great'";>Hi, <span id="name"></span>...</h1>
+        <p style="text-align: center;">Checkout Our Fabulous Menu!</p>
+        <section class="main-content">
+            <section class="inner-main-content">
+                <section class="appetizer">
+                </section>
+                <section class="main-course">
+                </section>
+                <section class="dessert">
+                </section>
+            </section>
+            <section class="container">
+                <br>
+                <a href="#contact-us">
+                    <div class="chevrondown"></div>
+                    <div class="chevrondown"></div>
+                    <div class="chevrondown"></div>
+                </a>
+            </section>
+        </section>
+        <script src="./js/script.js"></script>
+    </main>
+    <span><hr></span>
+    <footer>
+        <section class="contact-us" id="contact-us">
+            <h1>"Goodness to Your Taste"</h1>
+            <p>Feel free to contact us for any inquiries about our menu!<br>
+            You can always reach our owner on:</p>
+            <a href="https://www.instagram.com/i.am_atta/" target="_blank"><img src="./assets/instagram.png"></a>
+            <a href="https://www.linkedin.com/in/azalia20/" target="_blank"><img src="./assets/linkedin.png"></a>
+        </section>
+        <section class="container">
+            <br>
+            <a href="#">
+                <div class="chevronup"></div>
+                <div class="chevronup"></div>
+                <div class="chevronup"></div>
+            </a>
+        </section>
+        <section class="bottom-footer">
+            <!-- <img class="logo" src="./assets/Atta House Logo.png"> -->
+            <p><sup>&copy</sup>2023 azalia</p>
+        </section>
+    </footer>
+</body>
+</html>

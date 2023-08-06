@@ -14,17 +14,10 @@ body {
 
 /* This is Header Style */
 header {
-    background-image: url(../assets/Atta\ House\ Arabic\ Food.png);
+    height: 100vh;
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
-}
-
-header {
-    height: 100vh;
-}
-
-header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -268,6 +261,7 @@ footer {
 /* Media Queries */
 
 /* For mobile phones: */
+header{background-image: url(../assets/Atta-House-potrait.png);}
 [class*="col-"] {
     flex: 1 1 100%;
 }
@@ -305,6 +299,7 @@ h4 {
   
 @media only screen and (min-width: 600px) {
     /* For tablet: */
+    header{background-image: url(../assets/Atta\ House\ Arabic\ Food.png);}
     .col-1, .col-2, .col-3 {flex: 100%;}
     .main-content {
         margin-top: 5vh;
@@ -341,6 +336,7 @@ h4 {
 
 @media only screen and (min-width: 1000px) {
     /* For desktop: */
+    header{background-image: url(../assets/Atta\ House\ Arabic\ Food.png);}
     .col-1, .col-2, .col-3 {flex: 30%;}
     .main-content {
         height: 60vh;

@@ -253,12 +253,12 @@ footer {
 /* Media Queries */
 
 /* For mobile phones: */
-header{height: 90vh; background-image: url(../assets/Atta-House-potrait.png);}
+header{min-height: 100vh; background-image: url(../assets/Atta-House-potrait.png);}
 
 main {
     box-sizing: border-box;
-    height: 90vh;
-    margin: 10vh;
+    min-height: 100vh;
+    margin: 5vh;
 }
 [class*="col-"] {
     flex: 1 1 100%;
@@ -268,7 +268,7 @@ main {
     height: 70vh;
 }
 .main-content > section {
-    height: 20vh;
+    min-height: 20vh;
 }
 h4 {
     margin-top: 13vh;
@@ -295,7 +295,7 @@ h4 {
     margin-top: 27vh;
 }
 
-footer {height: 90vh;}
+footer {min-height: 100vh;}
   
 @media only screen and (min-width: 600px) {
     /* For tablet: */

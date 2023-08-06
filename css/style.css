@@ -253,6 +253,52 @@ footer {
 /* Media Queries */
 
 /* For mobile phones: */
+header{min-height: 100svh; background-image: url(../assets/Atta-House-potrait.png);}
+
+main {
+    box-sizing: border-box;
+    min-height: 100svh;
+    margin: 5vh;
+}
+[class*="col-"] {
+    flex: 1 1 100%;
+}
+.main-content {
+    margin-top: 5svh;
+    height: 70svh;
+}
+.main-content > section {
+    min-height: 20svh;
+}
+h4 {
+    margin-top: 13svh;
+    padding-top: 10px;
+}
+
+.appetizer:hover {
+    height: 25svh;
+}
+.main-course:hover {
+    height: 25svh;
+}
+.dessert:hover {
+    height: 25svh;
+}
+
+.appetizer:hover > h4 {
+    margin-top: 17svh;
+}
+.main-course:hover > h4 {
+    margin-top: 17svh;
+}
+.dessert:hover > h4 {
+    margin-top: 17svh;
+}
+
+footer {min-height: 100svh;}
+
+@media only screen and (min-width: 400px) {
+    /* For mobile phones: */
 header{min-height: 100vh; background-image: url(../assets/Atta-House-potrait.png);}
 
 main {
@@ -296,7 +342,54 @@ h4 {
 }
 
 footer {min-height: 100vh;}
-  
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablet: */
+    header{height: 100vh; background-image: url(../assets/Atta\ House\ Arabic\ Food.png);}
+    
+    main {
+        box-sizing: border-box;
+        height: 100vh;
+        margin: 10vh;
+    }
+    .col-1, .col-2, .col-3 {flex: 100%;}
+    .main-content {
+        margin-top: 5vh;
+        height: 70vh;
+    }
+    .main-content > section {
+        height: 20vh;
+    }
+    h4 {
+        margin-top: 13vh;
+        padding-top: 10px;
+    }
+
+    .appetizer:hover {
+        height: 35vh;
+    }
+    .main-course:hover {
+        height: 35vh;
+    }
+    .dessert:hover {
+        height: 35vh;
+    }
+
+    .appetizer:hover > h4 {
+        margin-top: 27vh;
+    }
+    .main-course:hover > h4 {
+        margin-top: 27vh;
+    }
+    .dessert:hover > h4 {
+        margin-top: 27vh;
+    }
+    footer{
+        height: 100vh;
+    }
+}
+
 @media only screen and (min-width: 600px) {
     /* For tablet: */
     header{height: 100vh; background-image: url(../assets/Atta\ House\ Arabic\ Food.png);}

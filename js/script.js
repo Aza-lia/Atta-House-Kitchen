@@ -6,6 +6,7 @@ function validateName() {
   } else {
     document.getElementById("name").innerText= casualname;
     document.forms["name-form"]["casual-name"].value=""
+    window.location.href="#shop"
   }
 
 return false;
